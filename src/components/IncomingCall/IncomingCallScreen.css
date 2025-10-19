@@ -1,0 +1,356 @@
+.incoming-call-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.incoming-call-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: background-color 0.1s ease;
+}
+
+.incoming-call-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.incoming-call-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.ring-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.ring {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: ringPulse 2s infinite ease-in-out;
+}
+
+.ring:nth-child(2) {
+  width: 220px;
+  height: 220px;
+  animation-delay: 0.3s;
+}
+
+.ring:nth-child(3) {
+  width: 260px;
+  height: 260px;
+  animation-delay: 0.6s;
+}
+
+@keyframes ringPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.call-header {
+  margin-bottom: 30px;
+}
+
+.incoming-call-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.profile-wrapper {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.profile-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.3),
+    0 6px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  border-radius: 50%;
+}
+
+.caller-info {
+  margin-bottom: 50px;
+}
+
+.caller-name {
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.call-type {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight: 400;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  gap: 40px;
+}
+
+.button-wrapper {
+  transition: transform 0.2s ease;
+}
+
+.call-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.call-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.call-button:active {
+  transform: translateY(0);
+}
+
+.button-gradient {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.reject-gradient {
+  background: linear-gradient(135deg, #FF4757 0%, #FF3742 100%);
+}
+
+.accept-gradient {
+  background: linear-gradient(135deg, #4CD964 0%, #34C759 100%);
+}
+
+.button-icon {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.button-text {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.swipe-hint {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.swipe-icon {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 8px;
+  animation: bounce 2s infinite;
+}
+
+.swipe-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .incoming-call-content {
+    padding: 20px;
+  }
+  
+  .profile-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .caller-name {
+    font-size: 28px;
+  }
+  
+  .button-container {
+    gap: 30px;
+  }
+  
+  .call-button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .button-icon {
+    font-size: 28px;
+  }
+  
+  .ring {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .ring:nth-child(2) {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .ring:nth-child(3) {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 320px) {
+  .caller-name {
+    font-size: 24px;
+  }
+  
+  .button-container {
+    gap: 20px;
+  }
+  
+  .call-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .button-icon {
+    font-size: 24px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .ring,
+  .profile-container,
+  .call-button,
+  .swipe-icon {
+    animation: none;
+    transition: none;
+  }
+  
+  .incoming-call-content {
+    transition: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .incoming-call-background {
+    background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
+  }
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .incoming-call-text,
+  .call-type,
+  .swipe-text {
+    color: #FFFFFF;
+  }
+  
+  .call-button {
+    border: 2px solid #FFFFFF;
+  }
+}

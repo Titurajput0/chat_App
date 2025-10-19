@@ -1,0 +1,22 @@
+
+
+
+{
+    "login": "Войти",
+    "signup": "Зарегистрироваться",
+    "name": "Введите имя",
+    "password": "Введите пароль",
+    "email": "Введите email",
+    "forgotPassword": "Забыли пароль?",
+    "createNewUser": "Создать новый аккаунт",
+    "createAccount": "Создать аккаунт",
+    "gender": "Пол",
+    "male": "Мужской",
+    "female": "Женский",
+    "othser": "Другой",
+    "marritStatus": "Семейное положение",
+    "country": "Выберите страну",
+    "alreadyUser": "Уже есть аккаунт?",
+    "dontHave": "Нет аккаунта?",
+    "selectLanguage": "Выберите язык"
+}

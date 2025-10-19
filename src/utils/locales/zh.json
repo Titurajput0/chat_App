@@ -1,0 +1,21 @@
+
+
+{
+    "login": "登录",
+    "signup": "注册",
+    "name": "输入姓名",
+    "password": "输入密码",
+    "email": "输入邮箱",
+    "forgotPassword": "忘记密码？",
+    "createNewUser": "创建新账户",
+    "createAccount": "创建账户",
+    "gender": "性别",
+    "male": "男",
+    "female": "女",
+    "othser": "其他",
+    "marritStatus": "婚姻状况",
+    "country": "选择国家",
+    "alreadyUser": "已经有账户？",
+    "dontHave": "还没有账户？",
+    "selectLanguage": "选择语言"
+}

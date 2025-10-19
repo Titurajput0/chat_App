@@ -1,0 +1,514 @@
+/* 
+.gradient-background {
+  background: linear-gradient(135deg, #FF512F, #DD2476);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.safe-area {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.login-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+}
+
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.form-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.eye-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.forgot-password-container {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.forgot-password {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+.login-button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  color: #DD2476;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+}
+
+.signup-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .safe-area {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .login-button {
+    height: 55px;
+  }
+} */
+
+
+
+/* Modern Background & Container */
+.modern-gradient-background {
+  background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-safe-area {
+  width: 100%;
+  max-width: 440px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Floating Shapes Animation */
+.floating-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape-1 {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 120px;
+  height: 120px;
+  top: 60%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 60px;
+  height: 60px;
+  bottom: 20%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Modern Login Container */
+.modern-login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 35px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modern-login-container.modern-fade-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* App Branding */
+.app-brand {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+.logo-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #FF512F, #DD2476);
+  border-radius: 16px;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.logo-gradient::after {
+  content: '💬';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 20px;
+  color: white;
+}
+
+.app-name {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Header */
+.modern-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.modern-title {
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.modern-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Form Styles */
+.modern-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modern-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 0 18px;
+  transition: all 0.3s ease;
+  height: 60px;
+}
+
+.modern-input-group:focus-within {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.input-icon {
+  font-size: 18px;
+  margin-right: 12px;
+  opacity: 0.8;
+}
+
+.modern-form-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  height: 100%;
+}
+
+.modern-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.modern-eye-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.modern-eye-button:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Forgot Password */
+.modern-forgot-password-container {
+  text-align: right;
+  margin-top: -5px;
+}
+
+.modern-forgot-password {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.modern-forgot-password:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Login Button */
+.modern-login-button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  color: #DD2476;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.modern-login-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(221, 36, 118, 0.3);
+}
+
+.modern-login-button:active {
+  transform: translateY(-1px);
+}
+
+.modern-login-button.loading {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.button-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid #DD2476;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.divider span {
+  padding: 0 15px;
+}
+
+/* Signup Link */
+.modern-signup-container {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.signup-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+}
+
+.modern-signup-link {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.modern-signup-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.modern-signup-link:hover {
+  color: white;
+}
+
+.modern-signup-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .modern-safe-area {
+    padding: 15px;
+  }
+  
+  .modern-login-container {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+  
+  .modern-title {
+    font-size: 28px;
+  }
+  
+  .app-name {
+    font-size: 24px;
+  }
+  
+  .modern-input-group,
+  .modern-login-button {
+    height: 55px;
+  }
+  
+  .shape {
+    display: none;
+  }
+}
+
+/* Enhanced focus states for accessibility */
+.modern-form-input:focus {
+  background: transparent;
+}
+
+.modern-login-button:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}

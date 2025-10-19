@@ -1,0 +1,21 @@
+
+
+{
+    "login": "로그인",
+    "signup": "회원가입",
+    "name": "이름 입력",
+    "password": "비밀번호 입력",
+    "email": "이메일 입력",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "createNewUser": "새 계정 만들기",
+    "createAccount": "계정 만들기",
+    "gender": "성별",
+    "male": "남성",
+    "female": "여성",
+    "othser": "기타",
+    "marritStatus": "결혼 여부",
+    "country": "국가 선택",
+    "alreadyUser": "이미 계정이 있나요?",
+    "dontHave": "계정이 없나요?",
+    "selectLanguage": "언어 선택"
+}

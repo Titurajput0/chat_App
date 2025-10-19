@@ -1,0 +1,21 @@
+
+
+{
+    "login": "Giriş Yap",
+    "signup": "Kayıt Ol",
+    "name": "İsim girin",
+    "password": "Şifre girin",
+    "email": "E-posta girin",
+    "forgotPassword": "Şifrenizi mi unuttunuz?",
+    "createNewUser": "Yeni hesap oluştur",
+    "createAccount": "Hesap Oluştur",
+    "gender": "Cinsiyet",
+    "male": "Erkek",
+    "female": "Kadın",
+    "othser": "Diğer",
+    "marritStatus": "Medeni Durum",
+    "country": "Ülke seçin",
+    "alreadyUser": "Zaten bir hesabınız var mı?",
+    "dontHave": "Hesabınız yok mu?",
+    "selectLanguage": "Dil seçin"
+}

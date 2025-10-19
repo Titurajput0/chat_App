@@ -1,0 +1,23 @@
+
+
+{
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "name": "أدخل الاسم",
+    "password": "أدخل كلمة المرور",
+    "email": "أدخل البريد الإلكتروني",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "createNewUser": "إنشاء حساب جديد",
+    "createAccount": "إنشاء حساب",
+    "gender": "الجنس",
+    "male": "ذكر",
+    "female": "أنثى",
+    "othser": "آخر",
+    "marritStatus": "الحالة الاجتماعية",
+    "country": "اختر الدولة",
+    "alreadyUser": "هل لديك حساب بالفعل؟",
+    "dontHave": "ليس لديك حساب؟",
+    "selectLanguage": "اختر اللغة"
+}
+
+

@@ -1,0 +1,20 @@
+
+{
+    "login": "Log In",
+    "signup": "Sign Up",
+    "name": "Enter name",
+    "password": "Enter password",
+    "email": "Enter email",
+    "forgotPassword": "Forgot Password?",
+    "createNewUser": "Create a new account",
+    "createAccount": "Create Account",
+    "gender":"Gender",
+    "male":"Male",
+    "female":"Female",
+    "othser":"Other",
+    "marritStatus":"Maritual Status",
+    "country":"Select country",
+    "alreadyUser": "Already have an account?",
+    "dontHave":"Don't have an account?",
+    "selectLanguage":"Select Language"
+    }

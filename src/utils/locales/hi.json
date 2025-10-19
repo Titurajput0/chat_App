@@ -1,0 +1,20 @@
+
+{
+  "login": "लॉग इन",
+  "signup": "साइन अप",
+  "name": "नाम दर्ज करें",
+  "password": "पासवर्ड दर्ज करें",
+  "email": "ईमेल दर्ज करें",
+  "forgotPassword": "पासवर्ड भूल गए?",
+  "createNewUser": "नया खाता बनाएँ",
+  "createAccount": "खाता बनाएँ",
+  "gender": "लिंग",
+  "male": "पुरुष",
+  "female": "महिला",
+  "othser": "अन्य",
+  "marritStatus": "वैवाहिक स्थिति",
+  "country": "देश चुनें",
+  "alreadyUser": "क्या पहले से खाता है?",
+  "dontHave": "क्या आपके पास खाता नहीं है?",
+  "selectLanguage": "भाषा चुनें"
+}

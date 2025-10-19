@@ -1,0 +1,21 @@
+
+
+{
+    "login": "لاگ اِن",
+    "signup": "سائن اپ",
+    "name": "نام درج کریں",
+    "password": "پاس ورڈ درج کریں",
+    "email": "ای میل درج کریں",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "createNewUser": "نیا اکاؤنٹ بنائیں",
+    "createAccount": "اکاؤنٹ بنائیں",
+    "gender": "صنف",
+    "male": "مرد",
+    "female": "عورت",
+    "othser": "دیگر",
+    "marritStatus": "ازدواجی حیثیت",
+    "country": "ملک منتخب کریں",
+    "alreadyUser": "پہلے سے اکاؤنٹ موجود ہے؟",
+    "dontHave": "اکاؤنٹ نہیں ہے؟",
+    "selectLanguage": "زبان منتخب کریں"
+}

@@ -1,0 +1,21 @@
+
+
+{
+    "login": "ログイン",
+    "signup": "サインアップ",
+    "name": "名前を入力",
+    "password": "パスワードを入力",
+    "email": "メールアドレスを入力",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "createNewUser": "新しいアカウントを作成",
+    "createAccount": "アカウント作成",
+    "gender": "性別",
+    "male": "男性",
+    "female": "女性",
+    "othser": "その他",
+    "marritStatus": "婚姻状況",
+    "country": "国を選択",
+    "alreadyUser": "すでにアカウントをお持ちですか？",
+    "dontHave": "アカウントをお持ちでないですか？",
+    "selectLanguage": "言語を選択"
+}

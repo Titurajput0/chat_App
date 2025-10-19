@@ -1,0 +1,21 @@
+
+
+{
+    "login": "Accedi",
+    "signup": "Registrati",
+    "name": "Inserisci nome",
+    "password": "Inserisci password",
+    "email": "Inserisci email",
+    "forgotPassword": "Hai dimenticato la password?",
+    "createNewUser": "Crea un nuovo account",
+    "createAccount": "Crea account",
+    "gender": "Genere",
+    "male": "Maschio",
+    "female": "Femmina",
+    "othser": "Altro",
+    "marritStatus": "Stato civile",
+    "country": "Seleziona paese",
+    "alreadyUser": "Hai già un account?",
+    "dontHave": "Non hai un account?",
+    "selectLanguage": "Seleziona lingua"
+}

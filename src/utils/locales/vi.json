@@ -1,0 +1,21 @@
+
+
+{
+    "login": "Đăng nhập",
+    "signup": "Đăng ký",
+    "name": "Nhập tên",
+    "password": "Nhập mật khẩu",
+    "email": "Nhập email",
+    "forgotPassword": "Quên mật khẩu?",
+    "createNewUser": "Tạo tài khoản mới",
+    "createAccount": "Tạo tài khoản",
+    "gender": "Giới tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "othser": "Khác",
+    "marritStatus": "Tình trạng hôn nhân",
+    "country": "Chọn quốc gia",
+    "alreadyUser": "Đã có tài khoản?",
+    "dontHave": "Chưa có tài khoản?",
+    "selectLanguage": "Chọn ngôn ngữ"
+}

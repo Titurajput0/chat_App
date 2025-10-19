@@ -1,0 +1,20 @@
+
+{
+  "login": "ਲਾਗਿਨ ਕਰੋ",
+  "signup": "ਸਾਇਨ ਅੱਪ",
+  "name": "ਨਾਮ ਦਰਜ ਕਰੋ",
+  "password": "ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+  "email": "ਈਮੇਲ ਦਰਜ ਕਰੋ",
+  "forgotPassword": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?",
+  "createNewUser": "ਨਵਾਂ ਖਾਤਾ ਬਣਾਓ",
+  "createAccount": "ਖਾਤਾ ਬਣਾਓ",
+  "gender": "ਲਿੰਗ",
+  "male": "ਪੁਰਸ਼",
+  "female": "ਇਸਤਰੀ",
+  "othser": "ਹੋਰ",
+  "marritStatus": "ਵਿਵਾਹਿਕ ਦਰਜਾ",
+  "country": "ਦੇਸ਼ ਚੁਣੋ",
+  "alreadyUser": "ਕੀ ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ?",
+  "dontHave": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਖਾਤਾ ਨਹੀਂ ਹੈ?",
+  "selectLanguage": "ਭਾਸ਼ਾ ਚੁਣੋ"
+}
